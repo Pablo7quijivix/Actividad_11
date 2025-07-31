@@ -47,4 +47,12 @@ buscado = input("Ingrese su identificacion (NIT): ")
 if buscado in propietarios:
     propietario = propietarios[buscado]
     print(f"\n_____PROPIETARIO ENCONTRADO_____")
-    print(f"")
+    pagados = 0
+    no_pagados = 0
+    if estado_impuesto == "si":
+        pagados += 1
+    else:
+        no_pagados +=1
+
+         print(f"===TOTAL DE VEHICULOS CON IMPUESTOS PAGADOS: {nit["estado_impuesto", pagados] ")
+         print(f"===TOTAL DE VEHICULOS SIN PAGAR: {nit["estado_impuesto"]}")
